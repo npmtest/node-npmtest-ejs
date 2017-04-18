@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-ejs/ejs/lib/utils.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-ejs/node_modules/ejs/lib/utils.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,9 +190,9 @@
 <body>
 <div class="header low">
     <h1 style="font-weight: bold;">
-        <a href="https://github.com/npmtest/node-npmtest-ejs">npmtest-ejs (v0.0.2)</a>
+        <a href="https://github.com/npmtest/node-npmtest-ejs">npmtest-ejs (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-ejs/ejs/lib/utils.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-ejs/node_modules/ejs/lib/utils.js</span></h1>
     <h2>
         
         Statements: <span class="metric">41.38% <small>(12 / 29)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric">1 statement, 1 branch</span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-ejs/ejs/lib/</a> &#187; utils.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-ejs/node_modules/ejs/lib/</a> » utils.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -582,12 +580,12 @@ var regExpChars = /[|\\{}()[\]^$+*?.]/g;
  * @static
  * @private
  */
-exports.escapeRegExpChars = <span class="fstat-no" title="function not covered" >function (string) {</span>
+exports.escapeRegExpChars = <span class="fstat-no" title="function not covered">function (string) {</span>
   // istanbul ignore if
-<span class="cstat-no" title="statement not covered" >  if (!string) {</span>
-<span class="cstat-skip" title="statement not covered" >    return '';</span>
+<span class="cstat-no" title="statement not covered">  if (!string) {</span>
+<span class="cstat-skip" title="statement not covered">    return '';</span>
   }
-<span class="cstat-no" title="statement not covered" >  return String(string).replace(regExpChars, '\\$&amp;');</span>
+<span class="cstat-no" title="statement not covered">  return String(string).replace(regExpChars, '\\$&amp;');</span>
 };
 &nbsp;
 var _ENCODE_HTML_RULES = {
@@ -599,8 +597,8 @@ var _ENCODE_HTML_RULES = {
 };
 var _MATCH_HTML = /[&amp;&lt;&gt;\'"]/g;
 &nbsp;
-<span class="fstat-no" title="function not covered" >function encode_char(c) {</span>
-<span class="cstat-no" title="statement not covered" >  return _ENCODE_HTML_RULES[c] || c;</span>
+<span class="fstat-no" title="function not covered">function encode_char(c) {</span>
+<span class="cstat-no" title="statement not covered">  return _ENCODE_HTML_RULES[c] || c;</span>
 }
 &nbsp;
 /**
@@ -637,14 +635,14 @@ var escapeFuncStr =
  * @private
  */
 &nbsp;
-exports.escapeXML = <span class="fstat-no" title="function not covered" >function (markup) {</span>
-<span class="cstat-no" title="statement not covered" >  return markup == undefined</span>
+exports.escapeXML = <span class="fstat-no" title="function not covered">function (markup) {</span>
+<span class="cstat-no" title="statement not covered">  return markup == undefined</span>
     ? ''
     : String(markup)
         .replace(_MATCH_HTML, encode_char);
 };
-exports.escapeXML.toString = <span class="fstat-no" title="function not covered" >function () {</span>
-<span class="cstat-no" title="statement not covered" >  return Function.prototype.toString.call(this) + ';\n' + escapeFuncStr;</span>
+exports.escapeXML.toString = <span class="fstat-no" title="function not covered">function () {</span>
+<span class="cstat-no" title="statement not covered">  return Function.prototype.toString.call(this) + ';\n' + escapeFuncStr;</span>
 };
 &nbsp;
 /**
@@ -658,12 +656,12 @@ exports.escapeXML.toString = <span class="fstat-no" title="function not covered"
  * @static
  * @private
  */
-exports.shallowCopy = <span class="fstat-no" title="function not covered" >function (to, from) {</span>
-<span class="cstat-no" title="statement not covered" >  from = from || {};</span>
-<span class="cstat-no" title="statement not covered" >  for (var p in from) {</span>
-<span class="cstat-no" title="statement not covered" >    to[p] = from[p];</span>
+exports.shallowCopy = <span class="fstat-no" title="function not covered">function (to, from) {</span>
+<span class="cstat-no" title="statement not covered">  from = from || {};</span>
+<span class="cstat-no" title="statement not covered">  for (var p in from) {</span>
+<span class="cstat-no" title="statement not covered">    to[p] = from[p];</span>
   }
-<span class="cstat-no" title="statement not covered" >  return to;</span>
+<span class="cstat-no" title="statement not covered">  return to;</span>
 };
 &nbsp;
 /**
@@ -678,14 +676,14 @@ exports.shallowCopy = <span class="fstat-no" title="function not covered" >funct
  * @static
  * @private
  */
-exports.shallowCopyFromList = <span class="fstat-no" title="function not covered" >function (to, from, list) {</span>
-<span class="cstat-no" title="statement not covered" >  for (var i = 0; i &lt; list.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >    var p = list[i];</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof from[p] != 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >      to[p] = from[p];</span>
+exports.shallowCopyFromList = <span class="fstat-no" title="function not covered">function (to, from, list) {</span>
+<span class="cstat-no" title="statement not covered">  for (var i = 0; i &lt; list.length; i++) {</span>
+<span class="cstat-no" title="statement not covered">    var p = list[i];</span>
+<span class="cstat-no" title="statement not covered">    if (typeof from[p] != 'undefined') {</span>
+<span class="cstat-no" title="statement not covered">      to[p] = from[p];</span>
     }
   }
-<span class="cstat-no" title="statement not covered" >  return to;</span>
+<span class="cstat-no" title="statement not covered">  return to;</span>
 };
 &nbsp;
 /**
@@ -698,22 +696,23 @@ exports.shallowCopyFromList = <span class="fstat-no" title="function not covered
  */
 exports.cache = {
   _data: {},
-  set: <span class="fstat-no" title="function not covered" >function (key, val) {</span>
-<span class="cstat-no" title="statement not covered" >    this._data[key] = val;</span>
+  set: <span class="fstat-no" title="function not covered">function (key, val) {</span>
+<span class="cstat-no" title="statement not covered">    this._data[key] = val;</span>
   },
-  get: <span class="fstat-no" title="function not covered" >function (key) {</span>
-<span class="cstat-no" title="statement not covered" >    return this._data[key];</span>
+  get: <span class="fstat-no" title="function not covered">function (key) {</span>
+<span class="cstat-no" title="statement not covered">    return this._data[key];</span>
   },
-  reset: <span class="fstat-no" title="function not covered" >function () {</span>
-<span class="cstat-no" title="statement not covered" >    this._data = {};</span>
+  reset: <span class="fstat-no" title="function not covered">function () {</span>
+<span class="cstat-no" title="statement not covered">    this._data = {};</span>
   }
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sat Apr 15 2017 22:01:37 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 20:39:55 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
