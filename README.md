@@ -1,6 +1,6 @@
 # npmtest-ejs
 
-#### test coverage for  [ejs (v2.5.6)](https://github.com/mde/ejs)  [![npm package](https://img.shields.io/npm/v/npmtest-ejs.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ejs) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ejs.svg)](https://travis-ci.org/npmtest/node-npmtest-ejs)
+#### basic test coverage for  [ejs (v2.5.6)](https://github.com/mde/ejs)  [![npm package](https://img.shields.io/npm/v/npmtest-ejs.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ejs) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ejs.svg)](https://travis-ci.org/npmtest/node-npmtest-ejs)
 
 #### Embedded JavaScript templates
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-ejs/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-ejs/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-ejs/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-ejs/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ejs/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ejs/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-ejs/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-ejs/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ejs/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ejs/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-ejs/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-ejs/build/coverage.html/index.html)
 
@@ -95,7 +95,8 @@
         "lint": "eslint \"**/*.js\" Jakefile",
         "test": "mocha"
     },
-    "version": "2.5.6"
+    "version": "2.5.6",
+    "bin": {}
 }
 ```
 
